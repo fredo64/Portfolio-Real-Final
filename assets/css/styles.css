@@ -1,5 +1,131 @@
-/* styles.css */
+:root {
+  --pink-main: #ff5fa2;
+  --pink-soft: #ffe1ec;
+  --pink-bg: #fff1f7;
+  --shadow: 0 20px 40px rgba(255,95,162,0.25);
+}
 
 * {
-	font-family: Arial;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top right, #ffd3e6, var(--pink-bg));
+  color: #ff3c8e;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: #ffe3ef;
+}
+
+.navbar nav a {
+  margin-left: 1.7rem;
+  text-decoration: none;
+  color: #ff3c8e;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.avatar-circle {
+  width: 160px;
+  height: 160px;
+  background: white;
+  border-radius: 50%;
+  margin: auto;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.hero h1 span {
+  color: var(--pink-main);
+}
+
+.hero-desc {
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.filled {
+  background: var(--pink-main);
+  color: white;
+}
+
+.btn.outlined {
+  border: 2px solid var(--pink-main);
+  color: var(--pink-main);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(255,95,162,0.35);
+}
+
+/* SKILLS */
+.skill {
+  margin-bottom: 1.2rem;
+}
+.skill label {
+  display: flex;
+  justify-content: space-between;
+}
+.bar {
+  height: 12px;
+  background: var(--pink-soft);
+  border-radius: 20px;
+}
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg,#ff88c2,#ff3c8e);
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 3rem;
 }

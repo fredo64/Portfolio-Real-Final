@@ -1,16 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Website Template</title>
-	<link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitty Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	<img src="assets/img/cat.jpg" alt="">
+<header class="navbar">
+  <div class="logo">🐱 Kitty Portfolio</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-	<script src="./assets/js/main.js"></script>
+<section class="hero">
+  <div class="avatar-circle">🐱</div>
+
+  <h1>Hello, I'm <span>Kitty!</span> ✨</h1>
+  <h2>Creative Designer & Developer 🌸</h2>
+
+  <p class="hero-desc">
+    Passionate about creating beautiful and delightful digital experiences.
+    Sprinkling a bit of magic into everything I build 💖
+  </p>
+
+  <div class="hero-buttons">
+    <a href="about.html" class="btn filled">About Me 🐾</a>
+    <a href="#" class="btn outlined">My Work ✨</a>
+  </div>
+</section>
+
+<section id="about" class="section cards">
+  <div class="card">
+    <h3>🐱 Kitty Chan</h3>
+    <h4>Creative Developer & Designer</h4>
+    <p>
+      I love blending art and technology to craft soft, happy,
+      and playful user experiences inspired by cuteness 🎀
+    </p>
+  </div>
+
+  <div id="skills" class="card">
+    <h3>🌸 My Skills</h3>
+
+    <div class="skill">
+      <label>React / TypeScript <span>90%</span></label>
+      <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <label>UI / UX Design <span>85%</span></label>
+      <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <label>Figma <span>88%</span></label>
+      <div class="bar"><div style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+      <label>CSS / Tailwind <span>92%</span></label>
+      <div class="bar"><div style="width:92%"></div></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>💌 Contact: kitty@email.com</p>
+  <p>© 2026 Kitty Portfolio</p>
+</footer>
+
 </body>
 </html>
